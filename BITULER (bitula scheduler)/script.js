@@ -62,6 +62,11 @@ document.addEventListener("DOMContentLoaded", () => {
         themeLink.href = `styles/themes/${savedId}.css`;
         document.body.className = `theme-${savedId}`;
         searchInput.value = savedLabel || "";
+      } else {
+        // Tema Default (Cyberpunk)
+        themeLink.href = `styles/themes/cyberpunk.css`;
+        document.body.className = `theme-cyberpunk`;
+        searchInput.value = "Cyberpunk (Bitula)";
       }
 
       searchInput.addEventListener("input", (e) => {
